@@ -1,0 +1,116 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Merriweather&family=Montserrat:wght@200&family=PT+Serif&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@200&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Merriweather&family=Montserrat:wght@200&family=Neonderthaw&family=PT+Serif&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@200&family=Sacramento&display=swap');
+
+/* Color Variables */
+:root{
+  --red-color:rgba(255,59,0,255);
+  --coral-color:rgba(255,103,90,255);
+  --purple-color:rgba(175,74,255,255);
+  --sky-color:rgba(0,190,255,255);
+  --green-color:rgba(0,212,123,255);
+  --black-color:rgba(53,53,53,255);
+  --text-color:rgba(240,240,240,0.9);
+
+}
+
+/* White-Theme Color Variables*/
+.white-theme{
+  --black-color:rgba(255,255,255,1);
+}
+
+
+
+/* Universal style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.outer-container{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 14rem;
+  height: 14rem;
+  background-color: var(--black-color);
+  border-radius: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-container{
+  width: 40%;
+  height:60%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.red, .purple{
+  background-color: var(--red-color);
+  -webkit-border-top-left-radius: 100px;
+  -webkit-border-bottom-left-radius: 100px;
+  -moz-border-radius-topleft: 100px;
+  -moz-border-radius-bottomleft: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.coral{
+  background-color: var(--coral-color);
+  -webkit-border-top-right-radius: 100px;
+  -webkit-border-bottom-right-radius: 100px;
+  -moz-border-radius-topright: 100px;
+  -moz-border-radius-bottomright: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.purple{
+  background-color: var(--purple-color);
+}
+
+.sky{
+  background-color: var(--sky-color);
+  border-radius: 50%;
+}
+
+.green{
+  background-color: var(--green-color);
+  -webkit-border-radius: 100px;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-radius: 100px;
+  -moz-border-radius-topright: 0;
+  border-radius: 100px;
+  border-top-right-radius: 0;
+}
+
+.black{
+  background-color: var(--black-color);
+}
+
+h3{
+  color: var(--text-color);
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 1px;
+}
+
+span{
+  color: var(--coral-color);
+  /* font-family: 'Neonderthaw', cursive; */
+}
